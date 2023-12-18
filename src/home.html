@@ -8,16 +8,53 @@
     <title>Header</title>
 </head>
 <body>
-    <header>
+    <header class="bg-secondary text-gray-100">
         <div class="px-2 bg-secondary text-white flex justify-between items-center">
             <div><img class="h-8 py-1" src="images/logo-w.svg"></div>
             <div class="text-2xl">&equiv;</div>
         </div>
+        <div class="mx-2 mt-2">
+            <input type="search" placeholder="Búsqueda" class="w-full leading-snug placeholder-gray-500 text-gray-800 py-1 px-4 rounded border border-blue-300 bg-gray-300;">
+            
+        </div>
+        <div class="py-1 mx-2 md:flex justify-around">
+            <div class="flex">
+                <label> Precio:</label>
+                
+                <div class="ml-2">$</div>
+                <div class="ml-2 text-primary">$$</div>
+                <div class="ml-2">$$$</div>
+                <div class="ml-2">$$$$</div>
+            </div>
+            <div class="flex">
+                <label class=" ">
+                    Calificacion
+                </label>
+                
+                <div class="ml-2 text-primary" >&starf;</div>
+                <div class="ml-px text-primary" >&starf;</div>
+                <div class="ml-px text-primary" >&starf;</div>
+                <div class="ml-px text-primary" >&starf;</div>
+                <div class="ml-px" >&star;</div>
+            </div>
+
+            <div>
+                <button class="md:w-full block hover:bg-orange-600 bg-orange-400 text-white px-4 py-1 rounded shadow-xl">Filtrar</button>
+            </div>
+        </div>
     </header>
    
-    <main class="bg-gray-500 mb-8">
-        
-            <div class="h-56 md:h-100 bg-cover bg-no-repeat bg-bottom py-2" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
+    <main class="mb-8">
+         
+        <div>
+            <div class="flex flex-col-reverse justify-center h-56 md:h-100 bg-cover bg-no-repeat bg-bottom " style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                <label class="text-5xl text-gray-200 text-center py-1/2">¡Tu comida favorita!</label>
+
+            </div>
+
+        </div>
+
+                
    
             <div class="container mx-auto md:flex"> 
 
@@ -46,8 +83,35 @@
                         <div class="mt-2 text-yellow-500 text-xs">&starf; &starf; &starf; &starf; &star;/ 36 reseñas</div>
                     </div>
                 </div>
+            
+            </div>   
 
-            </div>    
+            <div class="container md:mx-auto md:mt-4 md:mx-2">
+
+                <div class="mb-4">
+                    <label class="text-4xl underline font-normal">Contáctanos</label>
+
+                </div>
+            
+                <form >
+                    <label>Nombre completo</label>
+                    <input type="text" placeholder="Nombre" class="w-full leading-snug placeholder-gray-500 text-gray-800 py-1 px-4 rounded border border-blue-300 bg-gray-300 focus:-outline-offset-0 focus:outline-none focus:outline-blue-500 focus:shadow-2xl hover:bg-white" >
+                </form>
+                <form>
+                    <label>Correo electronico</label>
+                    <input type="text" placeholder="Email" class="w-full leading-snug placeholder-gray-500 text-gray-800 py-1 px-4 focus:-outline-offset-0 focus:outline-none focus:outline-blue-500 focus:shadow-2xl rounded border border-blue-300 bg-gray-300 hover:bg-white" >
+                </form>
+                <form>
+                    <label>Comentarios</label>
+                    <textarea cols="30" rows="10" class="w-full leading-snug placeholder-secondary text-gray-800 py-1 px-4 rounded focus:-outline-offset-0 focus:outline-none focus:outline-blue-500 focus:shadow-2xl border border-blue-300 bg-gray-300 hover:bg-white"></textarea>
+                
+                </form>
+
+                <div>
+                    <button class="md:w-full block mx-auto hover:bg-blue-800 bg-blue-500 text-white px-4 py-1 rounded shadow-xl">Enviar</button>
+                </div>
+            </div>
+
     </main>
     
     <footer class="mt-32 w-full bg-yellow-400 text-white">
